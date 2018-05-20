@@ -1,0 +1,84 @@
+.news-type {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  /* 让这个view固定 */
+  position: fixed;
+  /* 不想加背景，但是不加背景的话，上滑页面时遇到
+   * 这个view 会看到新闻的字，因为加了opacity，
+   * 还有其他方法吗？
+   */
+  background: white;
+  padding-bottom: 10rpx;
+}
+
+/* 默认新闻标题的样式 */
+.normal-type-style {
+  width: 120rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  text-align: center;
+}
+
+/* 选中新闻标题的样式 */
+.choose-type-style {
+  width: 120rpx;
+  font-size: 35rpx;
+  line-height: 49rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 展示新闻列表的样式，主要是调整边距 */
+.news-list {
+  padding-left: 30rpx;
+  padding-top: 50rpx;
+  padding-right: 30rpx;
+}
+
+.news-single {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+  padding-top: 30rpx;
+  border-bottom: 4px solid #eee;
+}
+
+.news-title {
+  font-size: 30rpx;
+}
+
+.news-source {
+  display: inline-block;
+  font-size: 20rpx;
+  opacity: 0.6;
+  padding-right: 20rpx;
+}
+
+.news-date {
+  display: inline-block;
+  font-size: 20rpx;
+  opacity: 0.6;
+}
+
+.news-image-wrapper {
+  width: 200rpx;
+  height: 125rpx;
+  margin-left: 20rpx;
+  flex-shrink: 0;
+  /* 内容溢出会被修剪，并且其余内容是不可见的 */
+  overflow: hidden; 
+  align-items: center;
+}
+
+.news-image {
+  width: 100%;
+}
+
+.bottom {
+  /* background: #eee; */
+  font-size: 25rpx;
+  text-align: center; 
+  opacity: 0.3;
+  padding-top: 50rpx;
+  padding-bottom: 100rpx;
+}

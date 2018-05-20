@@ -1,0 +1,46 @@
+/* pages/detail/detail.wxss */
+
+.page-detail{
+    width: 680rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    margin-top: 10rpx;
+}
+
+.abstract{
+    display: flex;
+    font-size: 26rpx;
+    position: relative;
+    opacity: 0.6;
+}
+
+.title{
+    margin-top: 30rpx;
+    margin-bottom: 20rpx;
+    font-size: 48rpx;
+}
+
+.abstract .count{
+    position: absolute;
+    right: 0%;
+}
+.abstract .time{
+    margin-right: 50rpx
+}
+
+.news-body{
+    margin-top: 60rpx;
+}
+
+.article-img{
+    width: 100%;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.article-text{
+    font-size: 35rpx;
+    margin-top: 18rpx;
+    margin-bottom: 18rpx;
+    line-height: 49rpx;
+}

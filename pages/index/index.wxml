@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="news-type">
+  <view class="normal-type-style {{type === item ? 'choose-type-style':''}}" wx:for="{{newsType}}" wx:key="{{item}}" bindtap='chooseType' data-categories='{{item}}'>{{typeMap[item]}}</view>
+</view>
+
+<view class='news-list'>
+  <view class='news-single' wx:for="{{newsList}}" wx:key="{{item.id}}" bindtap='newsDetail' data-id="{{item.id}}">    
+    <view>
+      <view class='news-title'>{{item.title}}</view>
+      <view class='news-source'>{{item.source}}</view>
+      <view class='news-date'>{{item.date}}</view>
+    </view>
+    <view class='news-image-wrapper'>
+      <image class='news-image' src="{{item.firstImage}}" mode='widthFix'></image>
+    </view> 
+  </view>
+</view>
+<view class='bottom'>——————   我是有底线的   ——————</view>
+
+ 
